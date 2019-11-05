@@ -1,85 +1,73 @@
-Login Page:    https://codepen.io/lav_joshi1056/pen/mdbxWNL
+Login Page:    https://codepen.io/lav_joshi1056/pen/WNNzEoe
 
 
 html code
 
 <!DOCTYPE html>
-<HTML>
-<HEAD>
-<TITLE> LOGIN PAGE</TITLE>
-<link rel="stylesheet" href="login.css">
-<style>
-    .link:hover{
-        cursor:pointer;
-    }
- a{
-     text-decoration: none;
- }   
-</style>
-</HEAD>
-<BODY>
- <div class="out"> <br>
-    <br>
-    <br> 
+<html>
+<title>
+</title>
+<link rel="stylesheet" type="text/css" href="loginf.css">
+<div class="login-page">
+  <div class="form">
     
-                        <div>
-    <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYBQ3xeE3ahd4X6O7AJSeOfGyTmnUT4FDL7DckaFwkPxA0-hki" height="90" width="90">
-                        </div>
-                       <br>
-                       <br>
-                       <br>
-                         <div class="for">    
-        <form>
-            <input class="a" type="email" placeholder="Email" border-bottom:5px;><br><br><br>
-            <input class="a" type="password" placeholder="Password"><br><br><br><br>
-            <button class="b" type="submit" value="submit" >LOGIN</button>
-        </form> 
-                        </div> 
-        <br>
-        <br>
-        <br>
-        <div>
-            Dont't have an account?<a href="lav.html">Sign Up</a>
-        </div>
+    <form class="login-form">
+        <img src="https://pbs.twimg.com/profile_images/1148569462385176577/ZEVOo8zd_400x400.png" height="100px" width="90px"><br><br>
+      <input type="text" placeholder="Email" />
+      <input type="password" placeholder="Password" /><br>
+      <button>Login</button><br><br>
+      <p class="message">Not registered? <a href="hackerearth.com">Create an account</a></p>
+    </form>
+  </div>
+</div>
 
- </div>
-    </BODY>
-    </HTML>
+</html>
 
-    
-    
-    
-    
-    css code
-    
-    body{
-    background-color:#E9EDF6;
-    text-align: center;
-}
-.out
-{
-    background-color:white;
-    height:500px;
-    width:350px;
-    border-radius:10px;
-    box-shadow: 2px 4px 6px 2px gray;
-    
-   margin-top:100px;
-   margin-left:600px;
-   align-content:center;
+css code
 
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
 }
-.a
-{    
-    border-bottom-width: 1px;
-    border-style: hidden;
-    border-bottom-style: solid;
-    outline:none;
+.form {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 360px;
+  height:400px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 2px 4px 6px 2px gray;
+ 
 }
-.b{
-    border-radius:5px;
-    background-image:linear-gradient(to left,#4C64AB ,#92A6E3 ,#B4F392 );
-    cursor:pointer;
-    width:80px;
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
+.form button {
+  background:blue;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 15px;
+}
+.form .message a {
+  color:blue;
+}
+
 
